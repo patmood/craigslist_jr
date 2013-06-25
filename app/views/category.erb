@@ -1,0 +1,6 @@
+<div class="container">
+  <h1>Craaaags List Mate</h1>
+  <% @posts.each do |post| %>
+    <a href=<%= "/post/#{post.id}" %> ><%= post.title %></a><br>
+  <% end %>
+</div>
