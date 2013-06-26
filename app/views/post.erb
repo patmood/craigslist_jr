@@ -1,7 +1,9 @@
 <div class="container">
   <a href=<%= "/category/#{@post.category_id}" %>>back</a>
   <h2><%= @post.title %></h2>
-  <p><%= @post.description %></p>
-  <p>Name: <%= @post.name %></p>
-  <p>Email: <%= @post.email %></p>
+  <div class="well">
+    <p><%= @post.description %></p>
+    <p>Name: <%= @post.name %></p>
+    <p>Email: <%= @post.email %></p>
+  </div>
 </div>

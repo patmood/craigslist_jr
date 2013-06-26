@@ -13,7 +13,13 @@ get '/post/new' do
 end
 
 post '/post/new' do
-  "Hello World"
+  # params[post].each_key do |key|
+  #   key = key.to_sym
+  # end
+  puts params["post"]
+  new_post = Post.create(params["post"])
+  puts "#{new_post.id} #{new_post.title}"
+  redirect "/post/#{new_post.id}"
 end
 
 get '/post/:id' do

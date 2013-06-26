@@ -7,35 +7,42 @@
         <fieldset>
           <legend>Enter Post Details</legend>
           <div class="control-group">
-            <label class="control-label" for="input01">Name</label>
+            <label class="control-label" for="input01">Title</label>
             <div class="controls">
-              <input type="text" class="input-xlarge" id="input01">
+              <input type="text" class="input-xlarge" id="input01" name="post[title]">
+            </div>            
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="input01">Your Name</label>
+            <div class="controls">
+              <input type="text" class="input-xlarge" id="input01" name="post[name]">
             </div>            
           </div>
 
           <div class="control-group">
             <label class="control-label" for="input01">Email</label>
             <div class="controls">
-              <input type="text" class="input-xlarge" id="input01">
+              <input type="text" class="input-xlarge" id="input01" name="post[email]">
             </div>            
           </div>
 
           <div class="control-group">
             <label class="control-label" for="textarea">Description</label>
             <div class="controls">
-              <textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+              <textarea class="input-xlarge" id="textarea" rows="3" name="post[description]"></textarea>
             </div>
           </div>          
 
           <div class="control-group">
             <label class="control-label" for="select01">Select Category</label>
             <div class="controls">
-              <select id="select01">
-                <option name="1">Casual Encounters</option>
-                <option>Casual Encounters</option>
-                <option>Apartments for Rent</option>
-                <option>4</option>
-                <option>5</option>
+              <select id="select01" name="post[category_id]">
+                <option value="1">Casual Encounters</option>
+                <option value="2">Cars and Automotive</option>
+                <option value="3">Apartments for Rent</option>
+                <option value="4">Missed Connections</option>
+                <option value="5">Random</option>
               </select>
             </div>
           </div>
