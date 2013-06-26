@@ -1,7 +1,7 @@
 <div class="container">
-  <h1>Craaaags List Mate</h1>
-  <%= @post.title %><br>
-  <%= @post.name %><br>
-  <%= @post.email %><br>
-  <%= @post.description %><br>
+  <a href=<%= "/category/#{@post.category_id}" %>>back</a>
+  <h2><%= @post.title %></h2>
+  <p><%= @post.description %></p>
+  <p>Name: <%= @post.name %></p>
+  <p>Email: <%= @post.email %></p>
 </div>

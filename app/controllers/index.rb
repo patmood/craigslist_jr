@@ -8,7 +8,16 @@ get '/category/:id' do
   erb :category
 end
 
+get '/post/new' do
+  erb :new_post
+end
+
+post '/post/new' do
+  "Hello World"
+end
+
 get '/post/:id' do
   @post = Post.find(params[:id])
   erb :post
 end
+

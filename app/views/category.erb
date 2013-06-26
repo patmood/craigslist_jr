@@ -1,6 +1,17 @@
 <div class="container">
-  <h1>Craaaags List Mate</h1>
-  <% @posts.each do |post| %>
-    <a href=<%= "/post/#{post.id}" %> ><%= post.title %></a><br>
-  <% end %>
+  <h2>Post List</h2>
+  <table class=​"table table-bordered table-striped table-hover">​
+    <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td>
+        <a href=<%= "/post/#{post.id}" %> ><%= post.title %></a>
+        </td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>​
+
+
+  <a href="/post/new" class="btn btn-large btn-primary">New Post</a>
 </div>
